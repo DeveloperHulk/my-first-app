@@ -8,6 +8,8 @@
 </head>
 <body>
 The result is rendered here : <br>
-<h1> result : <%=request.getAttribute("result") %> </h1>
+<h1>Addition result :</h1> <h2> <%=request.getAttribute("result") %> </h2>
+<h1>Subtraction result :</h1> <h2> <%=request.getAttribute("results") %> </h2>
+
 </body>
 </html>
