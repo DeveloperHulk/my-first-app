@@ -1,4 +1,7 @@
-<html>
+<!DOCTYPE html>
+<head>
+  <title>Some relevant title</title>
+</head>
 <body>
 <div class="container" style="text-align: center">
 <h2>Hello Users!</h2>
