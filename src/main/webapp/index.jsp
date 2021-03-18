@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-  <title>Some relevant title</title>
+  <title>Addition</title>
 </head>
 <body>
 <div class="container" style="text-align: center">
