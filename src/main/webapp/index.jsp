@@ -1,10 +1,14 @@
-<html>
+<!DOCTYPE html>
+<head>
+  <title>Addition</title>
+</head>
 <body>
 <div class="container" style="text-align: center">
 <h2>Hello Users!</h2>
 
 <h2>Add</h2>
 <form action="add">
+
 First Number :<input type="number" name="t1" style=" border: 2px solid black"><br>
 Second Number :<input type="number" name="t2" style=" border: 2px solid black"><br>
 
