@@ -33,10 +33,6 @@ steps:
     sonarQubeRunAnalysis: true
     sqMavenPluginVersionChoice: 'latest'
 
-- task: SonarCloudAnalyze@1
-    testResultsFiles: '**/surefire-reports/TEST-*.xml'
-    goals: 'package'
-
 - task: SonarCloudPublish@1
   inputs:
     pollingTimeoutSec: '300'
