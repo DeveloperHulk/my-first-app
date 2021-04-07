@@ -65,12 +65,25 @@ pipeline {
 	        }
 	}
 
-        stage('Release') {
-            steps 
-	    {
-                echo 'Releasing...'
-            }
-        }
+       stage('Build Image'){
+		    steps{
+			    bat "docker build -t secondimage ."
+		    }
+	    }
+	    stage("Cleaning Previous Deployment"){
+		steps{
+		catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
+		bat "docker stop myfirstcontainer"
+		bat "docker rm -f myfirstcontainer"
+			}
+		}
+}
+	    
+	     stage('Docker Deployment'){
+		    steps{
+			    bat "docker run --name secondcontainer -d -p 9090:8080 secondimage"
+		    }
+	    }
 	stage ('deploy')
 	    {
 		    steps
