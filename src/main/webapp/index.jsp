@@ -6,7 +6,7 @@
 <div class="container" style="text-align: center">
 <h2>Hello Users!</h2>
 
-<h2>Add</h2>
+<h2>--Add--</h2>
 <form action="add">
 
 First Number :<input type="number" name="t1" style=" border: 2px solid black"><br>
