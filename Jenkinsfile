@@ -73,8 +73,8 @@ pipeline {
 	    stage("Cleaning Previous Deployment"){
 		steps{
 		catchError(buildResult: 'SUCCESS', stageResult: 'FAILURE') {
-		bat "docker stop myfirstcontainer"
-		bat "docker rm -f myfirstcontainer"
+		bat "docker stop secondcontainer"
+		bat "docker rm -f secondcontainer"
 			}
 		}
 }
